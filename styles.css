@@ -1,0 +1,9 @@
+canvas {
+  height: 50vh;
+  width: 50vw;
+  position: absolute;
+  background-color: pink;
+}
+  margin: 0;
+  padding: 0;
+}
