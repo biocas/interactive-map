@@ -18,7 +18,7 @@ canvas {
 .container-fluid {
     position: relative; 
 }
-
+/* Header */
 .navbar {
     background-color: #D45C3A;
 }
@@ -39,7 +39,7 @@ canvas {
     padding-right: 3em;
     color: white;
 }
-
+/* Map Buttons: key, existing, proposed */
 .map-modes {
    position: absolute;
     z-index: 2;
@@ -84,7 +84,7 @@ canvas {
     margin-left: 2em;
     background-color: white;
 }
-
+/* Map Key lightbox */
 .key-div {
     position: absolute;
     background-color: white;
@@ -111,3 +111,4 @@ canvas {
 .key-img {
     padding-right: 0.5em;
 }
+

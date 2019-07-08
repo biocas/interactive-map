@@ -12,7 +12,9 @@
   </head>
     
   <body>
+      
       <div class="container-fluid">
+           <!-- Header -->
           <header class="row navbar-fixed-top navbar">
               <a href="http://www.gilgandra.nsw.gov.au/Home" class=""><img alt="logo" src="img/logo.png" class="logo navbar-brand navbar-btn"/></a>
               <h1 id="title" class="navbar-btn">GILGANDRA</h1>
@@ -24,7 +26,7 @@
           </header>
           <canvas id="map-canvas">
         </canvas>
-         
+         <!-- Map Buttons: Key, Existing, Proposed -->
           <div class="row map-modes">
               <button type="button" id="key" class="btn btn-primary" data-toggle="collapse" data-target="#key-menu" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Key</button>
            <div  class="button-wrap btn-group">
@@ -32,6 +34,7 @@
                 <button type="button" id="mode" class="btn btn-primary">Proposed</button>
             </div>
           </div>
+           <!-- Map Key lightbox -->
           <div id="key-menu" class="collapse row key-div card card-body">
             <div class="map-key" >
               <ul>
