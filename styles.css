@@ -54,7 +54,7 @@ canvas {
     margin-left: 5em;
 }
 
-#key:hover {
+#key:active {
     border-radius: 25px;
     background-color: #D45C3A;
     border: 2px solid #D45C3A; 
@@ -88,15 +88,26 @@ canvas {
 .key-div {
     position: absolute;
     background-color: white;
+    border: 2px solid #D45C3A;
+    border-radius: 25px;
     top: 15em;
     z-index: 2;
-    margin-left: 5em; 
+    left: 6em;
 }
 
 .map-key {
     background-color: white;
+     border-radius: 25px;
     color: #D45C3A;
     font-weight: 700;
     padding-top: 1em;
-    height: 45%;
+    padding-bottom: 0.5em;
+}
+
+.map-key li {
+    padding-right: 1.5em;
+} 
+
+.key-img {
+    padding-right: 0.5em;
 }

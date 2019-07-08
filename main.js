@@ -8,6 +8,8 @@ img.src = 'img/1.1500_LIGHT.png';
 function start() {
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height); 
 }
+
+
 /*
 //get DPI, canvas and context
 var dpi = window.devicePixelRatio;
