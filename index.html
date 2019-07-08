@@ -26,7 +26,7 @@
         </canvas>
          <!-- Map Buttons: Key, Existing, Proposed -->
           <div class="row map-modes">
-              <button type="button" id="key" class="btn btn-primary" data-toggle="collapse" data-target="#key-menu" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Key</button>
+              <button type="button" id="key" class="btn btn-primary" data-toggle="collapse" data-target="#key-menu"  role="button" aria-expanded="false">Key</button>
            <div  class="button-wrap btn-group">
                 <button type="button" id="mode" class="btn btn-primary">Existing</button>
                 <button type="button" id="mode" class="btn btn-primary">Proposed</button>
@@ -38,7 +38,7 @@
                     <button type="button" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
               </div>
            <!-- Map Key lightbox -->
-          <div id="key-menu" class="collapse row key-div card card-body">
+          <div id="key-menu" class="collapse row key-div">
             <div class="map-key" >
               <ul>
                 <li class="nav"> <img alt="orange" class="key-img" src="img/community.png">COMMUNITY FACILITIES</li>
@@ -48,9 +48,21 @@
                 <li class="nav"> <img alt="green" class="key-img" src="img/caravan.png">CARAVAN PARKS</li>
                 </ul>
               </div>
-              
-              
           </div>
+          <!-- Dummy button -->
+          <button type="button" class="marker btn" data-toggle="collapse" data-target="#info" role="button" aria-expanded="false"><img alt="marker" src="img/marker%20yellow.svg"></button>
+           <!-- Location Info lightbox -->
+          <div id="info" class="row collapse info-div">
+              <div class="location-info">
+                   <button type="button" class="btn"><span class="glyphicon glyphicon-remove"></span></button>
+                <img alt="location photo" src="http://placekitten.com/g/300/300">
+                  <h4 class="info-header">Carlos Super IGA</h4>
+                  <p class="info-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+              </div>
+          </div>
+           
       </div>
     <script src="main.js" defer="defer"></script>
   </body>

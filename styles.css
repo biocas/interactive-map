@@ -97,7 +97,7 @@ canvas {
 
 .map-key {
     background-color: white;
-     border-radius: 25px;
+    border-radius: 25px;
     color: #D45C3A;
     font-weight: 700;
     padding-top: 1em;
@@ -131,3 +131,36 @@ canvas {
     line-height: 50px;
     border-radius: 50px;
 }
+
+/* Pin Info Lightbox */
+.info-div {
+    position: absolute;
+    background-color: white;
+    border: 2px solid #D45C3A;
+    top: 18em;
+    z-index: 2;
+    right: 6em;
+    width: 30em;
+    height: 45em;
+}
+
+.location-info h4, img, p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.location-info img {
+    padding-top: 2em;
+}
+
+.location-info button {
+    position: absolute; 
+    right: auto;
+    color: white;
+    background-color: #D45C3A;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+}
+
