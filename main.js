@@ -1,20 +1,14 @@
-/* .addEventListener("DOMContentLoaded", function() {
-  var canvas = document.getElementById("map-canvas");
-  canvas.width = canvas.width;
-  canvas.height = canvas.height;
-  var context = canvas.getContext("2d");
-}, false); */
+alert('hello world!');
 
-function drawShape (){
- var canvas = document.getElementById("map-canvas");
-var context = canvas.getContext("2d");
-canvas.width = canvas.width;
-canvas.height = canvas.height;
-//var map3 = document.getElementById("map3");
+var canvas = document.getElementById('map-canvas');
+var ctx = canvas.getContext('2d');
+
 var img = new Image();
-img.src = "img/map3.svg";
-        context.drawImage(img, 0, 0);
-      };
 
-   
-       
+img.onload = function(){
+canvas.width = img.naturalWidth
+canvas.height = img.naturalHeight
+ctx.drawImage(img, 0, 0);
+}
+
+img.src = 'img/map3.svg';
