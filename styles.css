@@ -84,3 +84,19 @@ canvas {
     margin-left: 2em;
     background-color: white;
 }
+
+.key-div {
+    position: absolute;
+    background-color: white;
+    top: 15em;
+    z-index: 2;
+    margin-left: 5em; 
+}
+
+.map-key {
+    background-color: white;
+    color: #D45C3A;
+    font-weight: 700;
+    padding-top: 1em;
+    height: 45%;
+}
