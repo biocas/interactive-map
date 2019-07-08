@@ -10,9 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
-    
   <body>
-      
       <div class="container-fluid">
            <!-- Header -->
           <header class="row navbar-fixed-top navbar">
@@ -34,6 +32,11 @@
                 <button type="button" id="mode" class="btn btn-primary">Proposed</button>
             </div>
           </div>
+          <!-- Zoom Buttons -->
+          <div class="row zoom">
+                    <button type="button" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+                    <button type="button" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+              </div>
            <!-- Map Key lightbox -->
           <div id="key-menu" class="collapse row key-div card card-body">
             <div class="map-key" >
@@ -45,6 +48,8 @@
                 <li class="nav"> <img alt="green" class="key-img" src="img/caravan.png">CARAVAN PARKS</li>
                 </ul>
               </div>
+              
+              
           </div>
       </div>
     <script src="main.js" defer="defer"></script>
