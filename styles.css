@@ -1,8 +1,21 @@
 canvas {
-  height: 50vh;
-  width: 50vw;
+  height: 800px;
+  width: 566px;
   position: absolute;
-  background-color: pink;
   margin: 0;
   padding: 0;
+   /* image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;*/
+}
+
+.navbar {
+    background-color: #D45C3A;
+}
+
+#title {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 100 !important; 
 }

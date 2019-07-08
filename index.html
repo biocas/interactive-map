@@ -4,20 +4,22 @@
   <meta charset='utf-8'/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gilgandra Interactive Map</title>
-  <link rel='stylesheet' href='styles.css'/>
- <!-- Latest compiled and minified CSS -->
+    <link rel='stylesheet' href='styles.css'/>
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
   </head>
+    
   <body>
-  <div class=".container-fluid">
-      <img id="map3" class="hidden" alt="map" src="img/map3.svg"/>
-  <canvas id="map-canvas">
-      </canvas>
-  </div>
+      <div class=".container-fluid">
+          <header class="navbar-fixed-top navbar">
+              <a href="http://www.gilgandra.nsw.gov.au/Home" class=""><img alt="logo" src="img/logo.png" class="logo navbar-brand navbar-btn"/></a>
+              <h1 id="title" class="navbar-btn">GILGANDRA</h1>
+          </header>
+      <canvas id="map-canvas">
+        </canvas>
+      </div>
+    <script src="main.js" defer="defer"></script>
   </body>
 </html>
