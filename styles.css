@@ -12,6 +12,7 @@ canvas {
     height: 100%;
     width: 100%;
     position: relative;
+    top: 5.7em;
 }
 
 .container-fluid {
@@ -42,6 +43,7 @@ canvas {
 .map-modes {
    position: absolute;
     z-index: 2;
+    top: 8em;
 }
 
 #key {
@@ -80,4 +82,5 @@ canvas {
     border-radius: 25px;
     border: 2px solid #D45C3A; 
     margin-left: 2em;
+    background-color: white;
 }
