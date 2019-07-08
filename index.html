@@ -12,13 +12,26 @@
   </head>
     
   <body>
-      <div class=".container-fluid">
-          <header class="navbar-fixed-top navbar">
+      <div class="container-fluid">
+          <header class="row navbar-fixed-top navbar">
               <a href="http://www.gilgandra.nsw.gov.au/Home" class=""><img alt="logo" src="img/logo.png" class="logo navbar-brand navbar-btn"/></a>
               <h1 id="title" class="navbar-btn">GILGANDRA</h1>
+              <ul class="navbar-nav navbar-right nav-menu">
+                <li class="navbar-text nav">Home</li>
+                <li class="navbar-text nav">Maps</li>
+                <li class="navbar-text nav">Downloads</li>
+              </ul>
           </header>
-      <canvas id="map-canvas">
+          <canvas id="map-canvas">
         </canvas>
+         
+          <div class="row map-modes">
+              <button type="button" id="key" class="btn btn-primary">Key</button>
+           <div  class="button-wrap btn-group">
+                <button type="button" id="mode" class="btn btn-primary">Existing</button>
+                <button type="button" id="mode" class="btn btn-primary">Proposed</button>
+            </div>
+          </div>
       </div>
     <script src="main.js" defer="defer"></script>
   </body>

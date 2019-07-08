@@ -1,13 +1,21 @@
+body {
+     font-family: "Source Sans Pro", sans-serif !important;
+}
+
+header {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+}
 canvas {
-  height: 800px;
-  width: 566px;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-   /* image-rendering: -moz-crisp-edges;
-  image-rendering: -webkit-crisp-edges;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;*/
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container-fluid {
+    position: relative; 
 }
 
 .navbar {
@@ -18,4 +26,58 @@ canvas {
     color: white;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 100 !important; 
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.nav-menu {
+ display: inline-block;
+    padding-right: 3em;
+    color: white;
+}
+
+.map-modes {
+   position: absolute;
+    z-index: 2;
+}
+
+#key {
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #D45C3A; 
+    color: #D45C3A;
+    margin-left: 5em;
+}
+
+#key:hover {
+    border-radius: 25px;
+    background-color: #D45C3A;
+    border: 2px solid #D45C3A; 
+    color: white;
+    margin-left: 5em;
+}
+
+#mode {
+    color: #D45C3A;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    
+}
+
+#mode:hover {
+    color: white;
+    background-color:#D45C3A;
+    border: none;
+    border-radius: 25px;
+    
+}
+
+.button-wrap {
+    border-radius: 25px;
+    border: 2px solid #D45C3A; 
+    margin-left: 2em;
 }
