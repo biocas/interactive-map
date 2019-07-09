@@ -86,7 +86,7 @@ object {
 }
 /* Map Key lightbox */
 .key-div {
-    position: absolute;
+    position: fixed;
     background-color: white;
     border: 2px solid #D45C3A;
     border-radius: 25px;
@@ -134,12 +134,12 @@ object {
 
 /* Pin Info Lightbox */
 .info-div {
-    position: absolute;
+    position: fixed;
     background-color: white;
     border: 2px solid #D45C3A;
     top: 18em;
     z-index: 2;
-    right: 6em;
+    right: 10em;
     width: 30em;
     height: 45em;
 }
