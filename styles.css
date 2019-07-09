@@ -7,12 +7,12 @@ header {
     padding-right: 4em;
     padding-top: 1em;
 }
+
 object {
     z-index: -1;
-    height: 100%;
-    width: 100%;
     position: relative;
-    top: -50px;
+    height: 
+    
 }
 
 .container-fluid {
