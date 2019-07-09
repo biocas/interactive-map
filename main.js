@@ -8,6 +8,16 @@ window.addEventListener("load", function() {
     Cmarker[0].setAttributeNS(null, 'id', 'Caravan-Park');
     Cmarker[1].setAttributeNS(null, 'id', 'rest-a-while');
     Cmarker[2].setAttributeNS(null, 'id', 'barneys');
+    
+    /* loop to add button attributes to caravan markers */
+    for (var i = 0; i < Cmarker.length; i++) {
+        Cmarker[i].setAttributeNS(null, 'type', 'button');
+        Cmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
+        Cmarker[i].setAttributeNS(null, 'role', 'button' );
+        Cmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        }
+    
+
     /* adds ids to all hotel markers */
     var Hmarker = svgObject.getElementsByClassName('cls-61');
     Hmarker[0].setAttributeNS(null, 'id','Royal'); 
@@ -21,11 +31,29 @@ window.addEventListener("load", function() {
     Hmarker[8].setAttributeNS(null, 'id','Railway-Hotel');
     Hmarker[9].setAttributeNS(null, 'id','Lodge');
     
-    });
+     /* loop to add button attributes to hotel markers */
+    for (var i = 0; i < Hmarker.length; i++) {
+        Hmarker[i].setAttributeNS(null, 'type', 'button');
+        Hmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
+        Hmarker[i].setAttributeNS(null, 'role', 'button' );
+        Hmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        }
+    
+    $('#Caravan-Park').click(function() {
+        
+        });
+    
+     });
+    
+     
+
 
    
 
 /*
+	type="button" class="marker btn" data-toggle="collapse" data-target="#info" role="button" aria-expanded="false"
+
+
 CANVAS FUNCTIONALITY SETUP - HERE JUST IN CASE WE NEED IT BACK
 
 
