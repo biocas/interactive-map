@@ -16,7 +16,6 @@ window.addEventListener("load", function() {
         Cmarker[i].setAttributeNS(null, 'role', 'button' );
         Cmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         }
-    
 
     /* adds ids to all hotel markers */
     var Hmarker = svgObject.getElementsByClassName('cls-61');
@@ -39,9 +38,15 @@ window.addEventListener("load", function() {
         Hmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         }
     
-    $('#Caravan-Park').click(function() {
+    
+   /*  var CaravanPark = svgObject.getElementById('Caravan-Park');
+CaravanPark.addEventListener('click', function(){
+	console.log('yessss');
+            });
+    
+   $('#Caravan-Park').click(function() {
         
-        });
+        });*/
     
      });
     
