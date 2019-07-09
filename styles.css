@@ -7,12 +7,12 @@ header {
     padding-right: 4em;
     padding-top: 1em;
 }
-canvas {
+object {
     z-index: -1;
     height: 100%;
     width: 100%;
     position: relative;
-    top: 5.7em;
+    top: -50px;
 }
 
 .container-fluid {
@@ -41,7 +41,7 @@ canvas {
 }
 /* Map Buttons: key, existing, proposed */
 .map-modes {
-   position: absolute;
+   position: fixed;
     z-index: 2;
     top: 8em;
 }
@@ -115,7 +115,7 @@ canvas {
 /* Zoom buttons */
 .zoom {
     right: 5em;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 8em;
 }
