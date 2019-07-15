@@ -65,26 +65,52 @@ window.addEventListener("load", function() {
     var markers = svgObject.getElementsByClassName('marker');
     console.log(markers);
 
-   /* adds ids to all caravan parks markers
-    Cmarker[0].setAttributeNS(null, 'id', 'Caravan-Park');
-    Cmarker[1].setAttributeNS(null, 'id', 'rest-a-while');
-    Cmarker[2].setAttributeNS(null, 'id', 'barneys');
-     */
-    /* adds ids to all hotel markers 
-    Hmarker[0].setAttributeNS(null, 'id','Royal'); 
-    Hmarker[1].setAttributeNS(null, 'id','Gilgandra');
-    Hmarker[2].setAttributeNS(null, 'id','Orana-Windmill');
-    Hmarker[3].setAttributeNS(null, 'id','Three-ways');
-    Hmarker[4].setAttributeNS(null, 'id','Bungalow');
-    Hmarker[5].setAttributeNS(null, 'id','Silver-oaks');
-    Hmarker[6].setAttributeNS(null, 'id','Cooee-Motel');
-    Hmarker[7].setAttributeNS(null, 'id','Motor-Inn');
-    Hmarker[8].setAttributeNS(null, 'id','Railway-Hotel');
-    Hmarker[9].setAttributeNS(null, 'id','Lodge');
-    */
+   /* adds ids to all  markers   */
     
-     
-  
+
+    markers[0].setAttributeNS(null, 'id', 'Royal');
+    markers[1].setAttributeNS(null, 'id','Gilgandra');
+    markers[2].setAttributeNS(null, 'id','Tattersalls');
+    markers[3].setAttributeNS(null, 'id','Chinnock');
+    markers[4].setAttributeNS(null, 'id','Castlereagh');
+    markers[5].setAttributeNS(null, 'id','Orana-Windmill');
+    markers[6].setAttributeNS(null, 'id','Three-ways');
+    markers[7].setAttributeNS(null, 'id','Bungalow');
+    markers[8].setAttributeNS(null, 'id','Silver-oaks');
+    markers[9].setAttributeNS(null, 'id','Alfa');
+    markers[10].setAttributeNS(null, 'id','Cooee');
+    markers[11].setAttributeNS(null, 'id','Village');
+    markers[12].setAttributeNS(null, 'id','Railway');
+    markers[13].setAttributeNS(null, 'id','Lodge');
+    markers[14].setAttributeNS(null, 'id','Acropolis');
+    markers[15].setAttributeNS(null, 'id','Rest-a-while');
+    markers[16].setAttributeNS(null, 'id','Caravan');
+    markers[17].setAttributeNS(null, 'id','Caltex');
+    markers[18].setAttributeNS(null, 'id','Cactus');
+    markers[19].setAttributeNS(null, 'id','Shelley');
+    markers[20].setAttributeNS(null, 'id','IGA');
+    markers[21].setAttributeNS(null, 'id','RSL');
+    markers[22].setAttributeNS(null, 'id','Hitchen');
+    markers[23].setAttributeNS(null, 'id','Police');
+    markers[24].setAttributeNS(null, 'id','Aboriginal');
+    markers[25].setAttributeNS(null, 'id','Youth');
+    markers[26].setAttributeNS(null, 'id','Aerodrome');
+    markers[27].setAttributeNS(null, 'id','Rural');
+    markers[28].setAttributeNS(null, 'id','Historical');
+    markers[29].setAttributeNS(null, 'id','Heritage');
+    markers[30].setAttributeNS(null, 'id','Sporties');
+    markers[31].setAttributeNS(null, 'id','Council');
+    markers[32].setAttributeNS(null, 'id','Pool');
+    markers[33].setAttributeNS(null, 'id','Library');
+    markers[34].setAttributeNS(null, 'id','Court');
+    markers[35].setAttributeNS(null, 'id','Hospital');
+    markers[36].setAttributeNS(null, 'id','Preschool');
+    markers[37].setAttributeNS(null, 'id','TAFE');
+    markers[38].setAttributeNS(null, 'id','High-school');
+    markers[39].setAttributeNS(null, 'id','Public-school');
+    markers[40].setAttributeNS(null, 'id','Josephs');
+   
+    
     
    /*  var CaravanPark = svgObject.getElementById('Caravan-Park');
 CaravanPark.addEventListener('click', function(){
@@ -104,7 +130,6 @@ CaravanPark.addEventListener('click', function(){
 
 
 CANVAS FUNCTIONALITY SETUP - HERE JUST IN CASE WE NEED IT BACK
-
 
 var canvas = document.getElementById('map-canvas');
 var ctx = canvas.getContext('2d');
