@@ -11,8 +11,8 @@ header {
 object {
     z-index: -1;
     position: relative;
-    height: 
-    
+    margin: auto;
+    display: block;
 }
 
 .container-fluid {

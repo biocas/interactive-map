@@ -1,23 +1,25 @@
 window.addEventListener("load", function() {
     var svgObject = document.getElementById('object').contentDocument; 
-    
-    var svg = svgObject.getElementById('Base_2')
+        console.log(svgObject);
+    var svg = svgObject.getElementById('MAP_1');
       console.log(svg);   
-    /* adds ids to all caravan parks markers */
+    /* adds ids to all caravan parks markers
     var Cmarker = svgObject.getElementsByClassName('cls-63');
     Cmarker[0].setAttributeNS(null, 'id', 'Caravan-Park');
     Cmarker[1].setAttributeNS(null, 'id', 'rest-a-while');
     Cmarker[2].setAttributeNS(null, 'id', 'barneys');
-    
-    /* loop to add button attributes to caravan markers */
+     */
+    /* loop to add button attributes to caravan markers 
     for (var i = 0; i < Cmarker.length; i++) {
         Cmarker[i].setAttributeNS(null, 'type', 'button');
         Cmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
         Cmarker[i].setAttributeNS(null, 'role', 'button' );
         Cmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         }
+        
+        */
 
-    /* adds ids to all hotel markers */
+    /* adds ids to all hotel markers 
     var Hmarker = svgObject.getElementsByClassName('cls-61');
     Hmarker[0].setAttributeNS(null, 'id','Royal'); 
     Hmarker[1].setAttributeNS(null, 'id','Gilgandra');
@@ -29,15 +31,16 @@ window.addEventListener("load", function() {
     Hmarker[7].setAttributeNS(null, 'id','Motor-Inn');
     Hmarker[8].setAttributeNS(null, 'id','Railway-Hotel');
     Hmarker[9].setAttributeNS(null, 'id','Lodge');
+    */
     
-     /* loop to add button attributes to hotel markers */
+     /* loop to add button attributes to hotel markers 
     for (var i = 0; i < Hmarker.length; i++) {
         Hmarker[i].setAttributeNS(null, 'type', 'button');
         Hmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
         Hmarker[i].setAttributeNS(null, 'role', 'button' );
         Hmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         }
-    
+    */
     
    /*  var CaravanPark = svgObject.getElementById('Caravan-Park');
 CaravanPark.addEventListener('click', function(){
