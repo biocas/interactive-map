@@ -12,6 +12,7 @@ window.addEventListener("load", function() {
         Cmarker[i].setAttributeNS(null, 'role', 'button' );
         Cmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         $(Cmarker[i]).addClass('marker');
+        $(Cmarker[i]).addClass('btn');
         }
         
 /* loop to add button attributes to hotel markers */
@@ -22,6 +23,7 @@ window.addEventListener("load", function() {
         Hmarker[i].setAttributeNS(null, 'role', 'button' );
         Hmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         $(Hmarker[i]).addClass('marker');
+        $(Hmarker[i]).addClass('btn');
         }
     
 /* loop to add button attributes to business markers */
@@ -32,6 +34,7 @@ window.addEventListener("load", function() {
         Bmarker[i].setAttributeNS(null, 'role', 'button' );
         Bmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         $(Bmarker[i]).addClass('marker');
+        $(Bmarker[i]).addClass('btn');
         }
     
  /* loop to add button attributes to education markers */
@@ -42,6 +45,7 @@ window.addEventListener("load", function() {
         Emarker[i].setAttributeNS(null, 'role', 'button' );
         Emarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         $(Emarker[i]).addClass('marker');
+        $(Emarker[i]).addClass('btn');
         }
     
 /* loop to add button attributes to community facilities markers */
@@ -52,6 +56,7 @@ window.addEventListener("load", function() {
         Fmarker[i].setAttributeNS(null, 'role', 'button' );
         Fmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         $(Fmarker[i]).addClass('marker');
+        $(Fmarker[i]).addClass('btn');
         }
     
     var ThreePurple = svgObject.getElementsByClassName('st396');
@@ -61,7 +66,9 @@ window.addEventListener("load", function() {
     ThreePurple[i].setAttributeNS(null, 'role', 'button' );
     ThreePurple[i].setAttributeNS(null, 'aria-expanded', 'false');
     $(ThreePurple[i]).addClass('marker');
+         $(ThreePurple[i]).addClass('btn');
      }
+    
     var markers = svgObject.getElementsByClassName('marker');
     console.log(markers);
 
@@ -110,9 +117,15 @@ window.addEventListener("load", function() {
     markers[39].setAttributeNS(null, 'id','Public-school');
     markers[40].setAttributeNS(null, 'id','Josephs');
    
+  //  $("#Royal").click(function (e) { ... });
     
-    
-   /*  var CaravanPark = svgObject.getElementById('Caravan-Park');
+    var RoyalHotel = svgObject.getElementById('Royal'); 
+    RoyalHotel.setAttributeNS(null, 'data-target', 'Royal-Hotel');
+       /* 
+    $("#Royal").click(function (e) { 
+    $("#Royal-Hotel").show();
+    });
+ var CaravanPark = svgObject.getElementById('Caravan-Park');
 CaravanPark.addEventListener('click', function(){
 	console.log('yessss');
             });
