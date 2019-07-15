@@ -11,6 +11,7 @@ window.addEventListener("load", function() {
         Cmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
         Cmarker[i].setAttributeNS(null, 'role', 'button' );
         Cmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        $(Cmarker[i]).addClass('marker');
         }
         
 /* loop to add button attributes to hotel markers */
@@ -20,6 +21,7 @@ window.addEventListener("load", function() {
         Hmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
         Hmarker[i].setAttributeNS(null, 'role', 'button' );
         Hmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        $(Hmarker[i]).addClass('marker');
         }
     
 /* loop to add button attributes to business markers */
@@ -29,6 +31,7 @@ window.addEventListener("load", function() {
         Bmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
         Bmarker[i].setAttributeNS(null, 'role', 'button' );
         Bmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        $(Bmarker[i]).addClass('marker');
         }
     
  /* loop to add button attributes to education markers */
@@ -38,6 +41,7 @@ window.addEventListener("load", function() {
         Emarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
         Emarker[i].setAttributeNS(null, 'role', 'button' );
         Emarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        $(Emarker[i]).addClass('marker');
         }
     
 /* loop to add button attributes to community facilities markers */
@@ -47,6 +51,7 @@ window.addEventListener("load", function() {
         Fmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
         Fmarker[i].setAttributeNS(null, 'role', 'button' );
         Fmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        $(Fmarker[i]).addClass('marker');
         }
     
 
