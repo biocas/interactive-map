@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
       console.log(svg);   
    
 /* loop to add button attributes to caravan markers */
-    var Cmarker = svgObject.getElementsByClassName('st40');
+    var Cmarker = svgObject.getElementsByClassName('st393');
     for (var i = 0; i < Cmarker.length; i++) {
         Cmarker[i].setAttributeNS(null, 'type', 'button');
         Cmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
@@ -15,7 +15,7 @@ window.addEventListener("load", function() {
         }
         
 /* loop to add button attributes to hotel markers */
-     var Hmarker = svgObject.getElementsByClassName('st39');
+     var Hmarker = svgObject.getElementsByClassName('st392');
     for (var i = 0; i < Hmarker.length; i++) {
         Hmarker[i].setAttributeNS(null, 'type', 'button');
         Hmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
@@ -25,7 +25,7 @@ window.addEventListener("load", function() {
         }
     
 /* loop to add button attributes to business markers */
-     var Bmarker = svgObject.getElementsByClassName('st41');
+     var Bmarker = svgObject.getElementsByClassName('st394');
     for (var i = 0; i < Bmarker.length; i++) {
         Bmarker[i].setAttributeNS(null, 'type', 'button');
         Bmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
         }
     
  /* loop to add button attributes to education markers */
-     var Emarker = svgObject.getElementsByClassName('st44');
+     var Emarker = svgObject.getElementsByClassName('st398');
     for (var i = 0; i < Emarker.length; i++) {
         Emarker[i].setAttributeNS(null, 'type', 'button');
         Emarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
@@ -45,7 +45,7 @@ window.addEventListener("load", function() {
         }
     
 /* loop to add button attributes to community facilities markers */
-     var Fmarker = svgObject.getElementsByClassName('st43');
+     var Fmarker = svgObject.getElementsByClassName('st397');
     for (var i = 0; i < Fmarker.length; i++) {
         Fmarker[i].setAttributeNS(null, 'type', 'button');
         Fmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
@@ -54,6 +54,16 @@ window.addEventListener("load", function() {
         $(Fmarker[i]).addClass('marker');
         }
     
+    var ThreePurple = svgObject.getElementsByClassName('st396');
+     for (var i = 0; i < ThreePurple.length; i++) {
+    ThreePurple[i].setAttributeNS(null, 'type', 'button');
+    ThreePurple[i].setAttributeNS(null, 'data-toggle', 'collapse');
+    ThreePurple[i].setAttributeNS(null, 'role', 'button' );
+    ThreePurple[i].setAttributeNS(null, 'aria-expanded', 'false');
+    $(ThreePurple[i]).addClass('marker');
+     }
+    var markers = svgObject.getElementsByClassName('marker');
+    console.log(markers);
 
    /* adds ids to all caravan parks markers
     Cmarker[0].setAttributeNS(null, 'id', 'Caravan-Park');
