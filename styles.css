@@ -98,7 +98,6 @@ object {
 .map-key {
     background-color: white;
     border-radius: 25px;
-    color: #D45C3A;
     font-weight: 700;
     padding-top: 1em;
     padding-bottom: 0.5em;
@@ -106,10 +105,20 @@ object {
 
 .map-key li {
     padding-right: 1.5em;
+    color: #D45C3A;
 } 
 
 .key-img {
     padding-right: 0.5em;
+}
+
+.key-div ol li {
+    color: #939598;
+}
+
+.map-key ul, ol {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 
 /* Zoom buttons */
