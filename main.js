@@ -1,15 +1,11 @@
 window.addEventListener("load", function() {
     var svgObject = document.getElementById('object').contentDocument; 
         console.log(svgObject);
-    var svg = svgObject.getElementById('MAP_1');
+    var svg = svgObject.getElementById('MAP_1')
       console.log(svg);   
-    /* adds ids to all caravan parks markers
-    var Cmarker = svgObject.getElementsByClassName('cls-63');
-    Cmarker[0].setAttributeNS(null, 'id', 'Caravan-Park');
-    Cmarker[1].setAttributeNS(null, 'id', 'rest-a-while');
-    Cmarker[2].setAttributeNS(null, 'id', 'barneys');
-     */
-    /* loop to add button attributes to caravan markers 
+   
+/* loop to add button attributes to caravan markers */
+    var Cmarker = svgObject.getElementsByClassName('st40');
     for (var i = 0; i < Cmarker.length; i++) {
         Cmarker[i].setAttributeNS(null, 'type', 'button');
         Cmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
@@ -17,10 +13,49 @@ window.addEventListener("load", function() {
         Cmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
         }
         
-        */
+/* loop to add button attributes to hotel markers */
+     var Hmarker = svgObject.getElementsByClassName('st39');
+    for (var i = 0; i < Hmarker.length; i++) {
+        Hmarker[i].setAttributeNS(null, 'type', 'button');
+        Hmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
+        Hmarker[i].setAttributeNS(null, 'role', 'button' );
+        Hmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        }
+    
+/* loop to add button attributes to business markers */
+     var Bmarker = svgObject.getElementsByClassName('st41');
+    for (var i = 0; i < Bmarker.length; i++) {
+        Bmarker[i].setAttributeNS(null, 'type', 'button');
+        Bmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
+        Bmarker[i].setAttributeNS(null, 'role', 'button' );
+        Bmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        }
+    
+ /* loop to add button attributes to education markers */
+     var Emarker = svgObject.getElementsByClassName('st44');
+    for (var i = 0; i < Emarker.length; i++) {
+        Emarker[i].setAttributeNS(null, 'type', 'button');
+        Emarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
+        Emarker[i].setAttributeNS(null, 'role', 'button' );
+        Emarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        }
+    
+/* loop to add button attributes to community facilities markers */
+     var Fmarker = svgObject.getElementsByClassName('st43');
+    for (var i = 0; i < Fmarker.length; i++) {
+        Fmarker[i].setAttributeNS(null, 'type', 'button');
+        Fmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
+        Fmarker[i].setAttributeNS(null, 'role', 'button' );
+        Fmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
+        }
+    
 
+   /* adds ids to all caravan parks markers
+    Cmarker[0].setAttributeNS(null, 'id', 'Caravan-Park');
+    Cmarker[1].setAttributeNS(null, 'id', 'rest-a-while');
+    Cmarker[2].setAttributeNS(null, 'id', 'barneys');
+     */
     /* adds ids to all hotel markers 
-    var Hmarker = svgObject.getElementsByClassName('cls-61');
     Hmarker[0].setAttributeNS(null, 'id','Royal'); 
     Hmarker[1].setAttributeNS(null, 'id','Gilgandra');
     Hmarker[2].setAttributeNS(null, 'id','Orana-Windmill');
@@ -33,14 +68,8 @@ window.addEventListener("load", function() {
     Hmarker[9].setAttributeNS(null, 'id','Lodge');
     */
     
-     /* loop to add button attributes to hotel markers 
-    for (var i = 0; i < Hmarker.length; i++) {
-        Hmarker[i].setAttributeNS(null, 'type', 'button');
-        Hmarker[i].setAttributeNS(null, 'data-toggle', 'collapse');
-        Hmarker[i].setAttributeNS(null, 'role', 'button' );
-        Hmarker[i].setAttributeNS(null, 'aria-expanded', 'false');
-        }
-    */
+     
+  
     
    /*  var CaravanPark = svgObject.getElementById('Caravan-Park');
 CaravanPark.addEventListener('click', function(){
@@ -53,10 +82,7 @@ CaravanPark.addEventListener('click', function(){
     
      });
     
-     
 
-
-   
 
 /*
 	type="button" class="marker btn" data-toggle="collapse" data-target="#info" role="button" aria-expanded="false"
